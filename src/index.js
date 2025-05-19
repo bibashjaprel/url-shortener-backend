@@ -13,6 +13,7 @@ connectDB();
 
 app.use(cors());
 app.use(express.json());
+// app.use(limiter)
 
 let hitCount = 0;
 app.get('/', (req, res) => {
